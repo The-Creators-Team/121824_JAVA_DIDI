@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Display TextView -->
+    <TextView
+        android:id="@+id/tvDisplay"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="48sp"
+        android:textAlignment="viewEnd"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Buttons Grid -->
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintVertical_weight="1"
+        android:layout_marginTop="32dp"
+        android:columnCount="4"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvDisplay"
+        app:layout_constraintVertical_bias="0.008">
+
+        <!-- Buttons -->
+        <Button
+            android:id="@+id/btn7"
+            android:layout_width="63dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FF69BF"
+            android:onClick="onDigitClick"
+            android:text="7" />
+
+        <Button
+            android:id="@+id/btn8"
+            android:layout_width="63dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FF69BF"
+            android:onClick="onDigitClick"
+            android:text="8" />
+
+        <Button
+            android:id="@+id/btn9"
+            android:layout_width="62dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FF69BF"
+            android:onClick="onDigitClick"
+            android:text="9" />
+
+        <Button
+            android:id="@+id/btnDivide"
+            android:layout_width="58dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#69003c"
+            android:onClick="onOperatorClick"
+            android:text="/" />
+
+        <Button
+            android:id="@+id/btn4"
+            android:layout_width="64dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FF69BF"
+            android:onClick="onDigitClick"
+            android:text="4" />
+
+        <Button
+            android:id="@+id/btn5"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FF69BF"
+            android:onClick="onDigitClick"
+            android:text="5" />
+
+        <Button
+            android:id="@+id/btn6"
+            android:layout_width="63dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FF69BF"
+            android:onClick="onDigitClick"
+            android:text="6" />
+
+        <Button
+            android:id="@+id/btnMultiply"
+            android:layout_width="58dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#69003c"
+            android:onClick="onOperatorClick"
+            android:text="*" />
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="63dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FF69BF"
+            android:onClick="onDigitClick"
+            android:text="1" />
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="66dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FF69BF"
+            android:onClick="onDigitClick"
+            android:text="2" />
+
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="63dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FF69BF"
+            android:onClick="onDigitClick"
+            android:text="3" />
+
+        <Button
+            android:id="@+id/btnSubtract"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#69003c"
+            android:onClick="onOperatorClick"
+            android:text="-" />
+
+        <Button
+            android:id="@+id/btn0"
+            android:layout_width="64dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FF69BF"
+            android:onClick="onDigitClick"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/btnClear"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#69003c"
+            android:onClick="onClearClick"
+            android:text="C" />
+
+        <Button
+            android:id="@+id/btnEqual"
+            android:layout_width="64dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#69003c"
+            android:onClick="onEqualClick"
+            android:text="=" />
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#69003c"
+            android:onClick="onOperatorClick"
+            android:text="+" />
+
+    </GridLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
